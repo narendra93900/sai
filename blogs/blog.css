@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#EEEDE7;
+     font-family:"Poppins", sans-serif;
+}
+.headinh-1{
+    text-align: center;
+    text-decoration:underline;
+    color:#5885AF;
+}
+
+.des-1{
+    text-align: center;
+    color:#5885AF;
+    font-size: 25px;
+}
+
+.group-links{
+    display: flex;
+    justify-content: right;
+}
+
+.group-links a{
+    color: #5885AF;
+    font-size:20px;
+    transition: transform 0.2s;
+}
+.group-links a:hover{
+    transform: translateY(-10px);
+}
+.blog-container{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    /* background-color: #B9B7BD; */
+    border-radius: 10px;
+    margin-top:30px;
+    /* border: 1px solid black; */
+}
+.blog-card-1{
+    /* border: 1px solid black; */
+    width: 220px;
+    /* height:300px; */
+    transition: transform 0.2s;
+}
+
+.blog-card-1:hover {
+    transform: translateY(-10px);
+    /* transform: rotate(90deg); */
+    /* transform: translateY(25px); */
+    background-color:lightgrey;
+    border-radius:10px;
+}
+.blog-image{
+    margin-top:20px;
+    width:200px;
+}
+
+img{
+    max-width:100%;
+
+}
+
+.tittle{
+    text-align: center;
+    font-size: 30px;
+    color: #5885AF;
+}
+
+.desscripition{
+    text-align: center;
+    margin-left:16px;
+    font-size:17px;
+    color: #5885AF;
+}
+
+@media (max-width:576px){
+    
+    
+}
