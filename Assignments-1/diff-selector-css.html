@@ -1,0 +1,146 @@
+<!-- Explain different CSS3 selectors with examples.
+1.element slectors; ex:h1,div,p,,bodyetc 
+2.class selectors; ex:main-contanier,card,etc
+3.id selectors; ex:#name,aboutme,etc
+4.child selectors; ex:img,ul,li
+5.attridute selctor ex:input[type="text"]
+6.adjacent selctor  ex:h1+p--
+7.Descendant Selector ex: nav ul> -->
+
+<!-- Ass1.Write CSS code using various CSS3 selectors to style specific elements. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+
+    <style>
+        /* styles of element selectors */
+        h1 {
+            background-color: blueviolet;
+        }
+
+        p {
+            background-color: aquamarine;
+            color: blue;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        li {
+            color: green;
+        }
+
+        a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td {
+            border: 1px solid green;
+            padding: 5px;
+        }
+
+        /* styles of class selectors */
+        .main-container {
+            background-color: brown;
+            color: white;
+        }
+
+        /* 3. style of id secletor */
+        #unique {
+            background-color: cadetblue;
+            color: burlywood;
+        }
+
+        /* style of child selectors */
+        .div>img {
+            width: 400px;
+            height: auto;
+        }
+
+        /* style of attridute selctor */
+        input[type="text"] {
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        h1+p{
+            color:black;
+
+        }
+
+        span h5{
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.element selectors -->
+    <h1>Narendra</h1>
+    <p>Sai</p>
+    <ul>
+        <li>ashok</li>
+        <li>teja</li>
+    </ul>
+    <a>aboutme</a><br><br>
+    <table>
+        <th>sai</th>
+        <td>sss</td>
+    </table>
+
+    <!-- 2.class selectors -->
+    <div class="main-container">
+        <h1>
+            narendra
+        </h1>
+    </div>
+
+    <!-- 3.id secletor -->
+    <div id="unique">
+        <h3>Sai</h3>
+    </div>
+    <hr>
+
+    <!-- 4.child selectors -->
+    <div>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/712/950/small_2x/cute-cool-boy-dabbing-pose-cartoon-icon-illustration-people-fashion-icon-concept-isolated-generat-ai-free-photo.jpg"
+            alt="cartoon">
+        <hr>
+    </div>
+
+    <!-- 5.attridute selctor -->
+    <label>firstName</label>
+    <input type="text" placeholder="Enter your name">
+
+    <!-- 6.adjacent selctor -->
+    <h1>Title</h1>
+    <p>This paragraph will be blue.</p>
+    <div>This div will not be affected.</div>
+    <p>This paragraph will not be affected.</p>
+
+    <span>
+        <h5>This paragraph will also be blue.</h5>
+    </span>
+</body>
+
+</html>

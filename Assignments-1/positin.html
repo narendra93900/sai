@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+   <style>
+    .main-box{
+        display: flex;
+        position: relative;
+    }
+
+    .box{
+        width:100px;
+        height:80px;
+        border: 1px solid black;
+        margin:10px;
+        text-align: center;
+    }
+    #box1{
+        background-color:violet;
+        opacity:5px;
+        
+        
+    }
+    #box2{
+        background-color:red;
+        position: absolute;
+        right:20px;
+        top:20px;
+        
+       
+    }
+    #box3{
+        background-color: lightcoral;
+        opacity:3px;
+    }
+    #box4{
+        background-color: aqua;
+        opacity:2px;
+    }
+    
+   </style>
+</head>
+<body>
+    <div class="main-box">
+   <div class="box" id="box1">1</div>
+   <div class="box" id="box2">2</div>
+   <div class="box" id="box3">3</div>
+   <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

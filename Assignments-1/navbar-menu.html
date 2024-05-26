@@ -1,0 +1,50 @@
+<!-- Implement a responsive navigation bar with a dropdown menu. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar-menu</title>
+    <style>
+        body{
+            width:992px;
+        }
+        .navbar{
+            width:100%;
+            overflow: hidden;
+            background-color: blueviolet;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navbar ul li {
+            padding: 15px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header class="heading">
+        <h1>Navbar-menu</h1>
+        <nav class="navbar">
+            <ul>
+                <a href=""><li>home</li></a>
+                <a href=""><li>about</li></a>
+                <ul class="dropdown">
+                <a href=""><li>serivce</li></a>
+                <li>websites</li>
+                <li>project</li>
+                <li>Html guides</li>
+                <li>css guides</li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
