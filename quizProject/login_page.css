@@ -1,0 +1,95 @@
+body{
+    margin:0 auto;
+    padding:0px;
+    width:992px;
+    height:100vh;
+    font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #2d3250;
+    color: white;
+}
+
+.logo{
+    font-size:28px;
+    width:100%;
+    border-radius: 8px;
+    margin-top:15px;
+    padding:8px;
+}
+
+.logo:hover{
+    color: lightgreen;
+}
+
+.container{
+    display: flex;
+}
+
+.imge_leftside{
+    width:550px;
+   
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    margin-top:90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* animation: slideInFromLeft 1s ease-in-out; */
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.loginDetails_rightside{
+    width: 550px;
+    margin-top: 110px;
+    margin-left:20px;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) */
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+
+button {
+    width:100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color:green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(60, 250, 60);
+}
+
+
+
